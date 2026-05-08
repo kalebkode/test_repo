@@ -1,0 +1,9 @@
+(library
+  (name fsm)
+  (modules nfa regexp utils)
+  (libraries re)
+  (preprocess
+    (pps ppx_jane ppx_deriving.show)))
+(env
+  (dev
+      (flags (:standard -w -A))))

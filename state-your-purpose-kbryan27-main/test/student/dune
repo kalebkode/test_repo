@@ -1,0 +1,8 @@
+(tests
+    (names student)
+    (libraries fsm alcotest testUtils))
+
+(env
+ (dev
+  (flags
+   (:standard -w -A))))
